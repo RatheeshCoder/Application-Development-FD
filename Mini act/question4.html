@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Button Text</title>
+</head>
+<body>
+  <h1 id="buttonText">Click a button to see its text here</h1>
+  <button onclick="updateText(this)">Button 1</button>
+  <button onclick="updateText(this)">Button 2</button>
+  <button onclick="updateText(this)">Button 3</button>
+
+  <script>
+    function updateText(button) {
+      var h1Element = document.getElementById("buttonText");
+      h1Element.textContent = "Button Text: " + button.textContent;
+    }
+  </script>
+</body>
+</html>

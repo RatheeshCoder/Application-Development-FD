@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add H1 to Container</title>
+</head>
+<body>
+  <button onclick="addH1()">Hello</button>
+  <div id="container"></div>
+
+  <script>
+    function addH1() {
+      var newH1 = document.createElement("h1");
+      newH1.textContent = "Hello World!";
+      var container = document.getElementById("container");
+      container.appendChild(newH1);
+    }
+  </script>
+</body>
+</html>

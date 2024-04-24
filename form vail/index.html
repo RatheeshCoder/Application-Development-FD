@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <form id="form">
+              <div class="input-container">
+                <input type="password" id="password" aria-describedby="requirements" required />
+                <label for="password">Password</label>
+                <button class="show-password" id="show-password" type="button" role="switch" aria-label="Show password" aria-checked="false">Show</button>
+              </div>
+          
+              <div id="requirements" class="password-requirements">
+                <p class="requirement" id="length">Min. 8 characters</p>
+                <p class="requirement" id="lowercase">Include lowercase letter</p>
+                <p class="requirement" id="uppercase">Include uppercase letter</p>
+                <p class="requirement" id="number">Include number</p>
+                <p class="requirement" id="characters">Include a special character: #.-?!@$%^&*</p>
+              </div>
+          
+              <div class="input-container">
+                <input type="password" id="confirm-password" required />
+                <label for="confirm-password">Confirm password</label>
+              </div>
+          
+              <div class="password-requirements">
+                <p class="requirement hidden error" id="match">Passwords must match</p>
+              </div>
+          
+              <div class="submit-container">
+                <input type="submit" id="submit" disabled />
+              </div>
+            </form>
+          </div>
+          
+          
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

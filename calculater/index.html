@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div id="iphone">
+            <div id="container">
+                <div id="nav">
+                    <div id="time"></div>
+                    <div id="dynamicIsland"></div>
+                    <div id="right">
+
+                    </div>
+                </div>
+                <div id="result">
+                    <div id="resultDisplay">0</div>
+                </div>
+                <div id="button">
+                    <button class="key" onclick="clearDisplay()">AC</button>
+                    <button class="key" onclick="toggleSign()">⁺/₋</button>
+                    <button class="key" onclick="append('%')">%</button>
+                    <button class="key" onclick="append('/')">÷</button>
+                    <button class="key" onclick="append('7')">7</button>
+                    <button class="key" onclick="append('8')">8</button>
+                    <button class="key" onclick="append('9')">9</button>
+                    <button class="key" onclick="append('*')">x</button>
+                    <button class="key" onclick="append('4')">4</button>
+                    <button class="key" onclick="append('5')">5</button>
+                    <button class="key" onclick="append('6')">6</button>
+                    <button class="key" onclick="append('-')">-</button>
+                    <button class="key" onclick="append('1')">1</button>
+                    <button class="key" onclick="append('2')">2</button>
+                    <button class="key" onclick="append('3')">3</button>
+                    <button class="key" onclick="append('+')">+</button>
+                    <button class="key" onclick="append('0')">
+                        <p>0</p>
+                    </button>
+                    <button class="key" onclick="append('.')">,</button>
+                    <button class="key" onclick="calculate()">=</button>
+                </div>
+                <div id="home">
+                    <div id="homeButton"></div>
+                </div>
+            </div>
+            <div id="powerButton"></div>
+            <div id="upButton"></div>
+            <div id="downButton"></div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

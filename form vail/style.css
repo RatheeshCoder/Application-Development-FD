@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --accent-color: #6200ee;
+  --accent-color-opaque: #6200ee24;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-container {
+  min-height: 100vh;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 95%;
+  max-width: 600px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%), 0 0 15px 0 rgb(0 0 0 / 2%), 0 0 20px 4px rgb(0 0 0 / 6%);
+}
+
+.input-container {
+  background-color: #f5f5f5;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  height: 56px;
+  transition: background-color 500ms;
+}
+
+.input-container:hover {
+  background-color: #ececec;
+}
+
+.input-container:focus-within {
+  background-color: #dcdcdc;
+}
+
+label {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  transform-origin: left top;
+  user-select: none;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),color 150ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  caret-color: var(--accent-color);
+  border: 1px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.42);
+  color: rgba(0, 0, 0, 0.87);
+  transition: border 500ms;
+  padding: 20px 16px 6px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--accent-color);
+}
+
+input:focus + label {
+  color: var(--accent-color);
+}
+
+input:focus + label,
+input.is-valid + label {
+  transform: translateY(-100%) scale(0.75);
+}
+
+input[type=submit] {
+  transition: .25s;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+}
+
+input[type=submit]:disabled {
+  color: #808080;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+input[type=submit]:not(:disabled):hover {
+  border-color: transparent;
+  background-color: var(--accent-color-opaque);
+  color: var(--accent-color);
+}
+
+.submit-container {
+  border-radius: 4px;
+  margin-top: 1rem;
+  height: 56px;
+}
+
+.show-password {
+  transition: opacity .25s;
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: fit-content;
+  border: none;
+  font-size: 10px;
+  color: grey;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.show-password:hover,
+.show-password:focus {
+  color: black;
+}
+
+.input-container:not(:hover, :focus-within) .show-password {
+  opacity: 0;
+}
+
+.password-requirements {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+  padding: 0 16px;
+}
+
+.requirement {
+  font-size: 14px;
+  flex: 1 0 50%;
+  min-width: max-content;
+  margin: 5px 0;
+}
+
+.requirement:before {
+  content: '\2639';
+  padding-right: 5px;
+  font-size: 1.6em;
+  position: relative;
+  top: .15em;
+}
+
+.requirement:not(.valid) {
+  color: #808080;
+}
+
+.requirement.valid {
+  color: #4CAF50;
+}
+
+.requirement.valid:before {
+  content: '\263A';
+}
+
+.requirement.error {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #eaeaea90;
+}
+
+footer p {
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
+  color: #221133;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}

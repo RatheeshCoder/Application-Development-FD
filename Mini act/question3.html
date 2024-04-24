@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Button Color</title>
+<style>
+  /* CSS to style the button */
+  .color-change-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <button class="color-change-btn" onclick="changeColor()">Change Color</button>
+
+  <script>
+    var clickCount = 0; 
+
+    function changeColor() {
+      var button = document.querySelector('.color-change-btn');
+      var colors = ['red', 'blue', 'yellow', 'purple', 'orange'];
+      clickCount = (clickCount + 1) % colors.length;
+      button.style.backgroundColor = colors[clickCount];
+    }
+  </script>
+</body>
+</html>
