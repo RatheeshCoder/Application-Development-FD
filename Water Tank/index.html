@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="water-tank">
+            <div class="liquid">
+              <svg class="water" viewBox="0 0 200 100">
+                <defs>
+                  <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0" style="stop-color:#29ABE2"/>
+                  <stop offset="0.1643" style="stop-color:#28A6E3"/>
+                  <stop offset="0.3574" style="stop-color:#2496E6"/>
+                  <stop offset="0.5431" style="stop-color:#1E7DEA"/>
+                  <stop offset="0.7168" style="stop-color:#1559F0"/>
+                  <stop offset="0.874" style="stop-color:#0B2CF7"/>
+                  <stop offset="1" style="stop-color:#0000FF"/>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#waterGradient)" d="
+                  M 0,0 v 100 h 200 v -100
+                  c -10,0 -15,5 -25,5 c -10,0 -15,-5 -25,-5
+                  c -10,0 -15,5 -25,5 c -10,0 -15,-5 -25,-5
+                  c -10,0 -15,5 -25,5 c -10,0 -15,-5 -25,-5
+                  c -10,0 -15,5 -25,5 c -10,0 -15,-5 -25,-5
+                "/>
+              </svg>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="pipe">
+            </div>
+        </div>
+        <div class="tap">
+            <button class="tap-handle" id="tapButton"></button>
+            <div class="tap-holl"></div>
+            <div class="water-out"></div>
+        </div>
+        
+    </main>
+
+    
+
+   <script src="./script.js"></script>
+</body>
+</html>
