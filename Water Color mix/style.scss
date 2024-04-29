@@ -1,0 +1,116 @@
+
+.tank-1{
+    width: 275px;
+    height: 350px; 
+    border: 2px solid black;      
+    rotate: 180deg;
+    border-radius: 0px 0px 10px 10px;
+}
+.tank-1-Water{
+    background-color: rgb(220, 5, 5);
+    width: 275px;
+    height: 350px;
+
+}
+.water-tank-1 img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 317px;
+    left: 535px;
+    margin: 0px;
+    padding: 0px;
+}
+.pipe-water-1{
+    display: none;
+    width: 10px;
+    height: 350px;
+    background-color: rgb(220, 5, 5);
+    position: absolute;
+    left: 574.5px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-left: 250px;
+}
+.tank-2{
+    width: 275px;
+    height: 350px;
+    rotate: 180deg;
+    border: 2px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+.tank-2-Water{
+    background-color: rgb(220, 5, 5);
+    width: 275px;
+    height: 350px;
+}
+.water-tank-2 img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 317px;
+    left: 934px;
+    transform: scaleX(-1);
+    margin: 0px;
+    padding: 0px;
+    transform: scaleX(1);
+}
+.pipe-water-2{
+    display: none;
+    width: 10px;
+    height: 350px;
+    background-color: rgb(220, 5, 5);
+    position: absolute;
+    left: 974px;
+}
+.tank-3{
+    width: 275px;
+    height: 350px;
+    rotate: 180deg;
+    border: 2px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+.tank-3-Water{
+    background-color: rgb(220, 5, 5);
+    width: 275px;
+    height: 350px;
+}
+.water-tank-3 img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 317px;
+    left: 1330px;
+    transform: scaleX(-1);
+    margin: 0px;
+    padding: 0px;
+    transform: scaleX(1);
+}
+.pipe-water-3{
+    display: none;
+    width: 10px;
+    height: 350px;
+    background-color: rgb(220, 5, 5);
+    position: absolute;
+    left: 1370px;
+}
+
+.tank{
+    width: 90%;
+    height:250px;
+    margin-top: 100px;
+    margin-left: 110px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    rotate: 180deg;
+}
+
+.tank-water{
+    background-color:rgb(220, 5, 5);
+}
