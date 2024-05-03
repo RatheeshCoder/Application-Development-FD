@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #141519;
+}
+
+$txt-bold:#eaedee;
+$txt-light:#a9b5c5;
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rating-car{
+       
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 30px;
+        flex-direction: column;
+        background-color: #1f2630;
+        padding: 2rem;
+
+        .top-img{
+            width: 15%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #24303b;
+            border-radius: 50%;
+            img{
+                width: 50%;
+                height:auto;
+            }
+
+        }
+
+        .content{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            flex-direction: column;
+
+            h1{
+                color: $txt-bold;
+                font-size: 2rem;
+                font-weight: 900;
+            }
+            p{
+                color: $txt-light;
+                font-size: 1.2rem;
+                font-weight: 600;
+                opacity: .7;
+            }
+        }
+
+        .rate{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            flex-direction: row;
+            margin-top: 10px;
+            position: relative;
+
+            
+            position: relative;
+                    
+                    input[type="radio"] {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        border: 2px solid #ccc;
+                        outline: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #f7771d;
+                            color: $txt-bold;
+                        }
+                    }
+                    input[type="radio"]:checked {
+                        background-color: #7d8798;
+                        color: $txt-bold;
+                       
+                    }
+            label {
+                display: block;
+                width: 50px;
+                height: 50px;
+                // background-color: #24303b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all .3s ease;
+                position: relative;
+                z-index: 1;
+                color: $txt-bold;
+                left: -10.5%;
+            }
+          
+        }
+
+        .submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: row;
+            margin-top: 10px;
+            position: relative;
+            width: 100%;
+
+            button{
+                width: 100%;
+                border-radius: 2rem !important;
+                height: fit-content;
+                padding: 1rem;
+                background-color: #f7771d;
+                color: $txt-bold;
+                font-size: 1rem;
+                font-weight: 600;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                &:hover{
+                    background-color: $txt-bold;
+                    color: #f7771d;
+                }
+            }
+        }
+
+    }
+
+
+    .thankYou-card{
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+        background-color: #1f2630;
+        padding: 2rem;
+        text-align: center;
+
+        h1{
+            color: $txt-bold;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        h3{
+            color: $txt-light;
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: .7;
+        }
+
+        .rating{
+            width: 60%;
+            height: fit-content;
+            padding: .5rem;
+            background-color: #262f38;
+            border-radius: 2rem;
+            color: #f7771d;
+
+        }
+    }
+}
